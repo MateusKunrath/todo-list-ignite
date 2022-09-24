@@ -1,0 +1,70 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: var(--gray-500);
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.uncheck {
+  align-self: flex-start;
+  cursor: pointer;
+  color: var(--blue-500);
+  border-radius: 50%;
+
+  transition: color .2s;
+  transition: background-color .2s;
+}
+
+.uncheck:hover {
+  color: var(--blue-600);
+  background: rgba(30, 111, 159, 0.2);
+  border-radius: 50%;
+}
+
+.checked {
+  align-self: flex-start;
+  cursor: pointer;
+  color: var(--purple-600);
+  border-radius: 50%;
+
+  transition: color .2s, background-color .2s;
+}
+
+.checked:hover {
+  color: var(--purple-500);
+}
+
+.task>span {
+  align-self: flex-start;
+  flex: 1;
+  max-width: 39rem;
+  overflow-wrap: break-word;
+}
+
+.taskChecked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.buttonDelete {
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  padding: 0.3125rem;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 4px;
+
+  transition: color .2s, background-color .2s;
+}
+
+.buttonDelete:hover {
+  color: var(--red-500);
+  background: var(--gray-400);
+}

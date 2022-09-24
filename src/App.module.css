@@ -1,0 +1,72 @@
+.wrapper {
+  max-width: 48rem;
+  margin: 0 auto;
+
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: calc(0px - 1.75rem);
+}
+
+.tasksInfo {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.createdTasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--blue-500);
+}
+
+.createdTasks span {
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 20px;
+}
+
+.completedTasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--purple-500);
+}
+
+.completedTasks span {
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 20px;
+}
+
+.content {
+  overflow: scroll;
+  width: 100%;
+  height: 36rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
